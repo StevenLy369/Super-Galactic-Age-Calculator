@@ -57,14 +57,14 @@ export class Age {
 
   calculateExpect(){
     if (this.age > 0){
-      this.mercuryOld = this.age * this.mecury;
-      this.mercuryExpect = this.lifeExpect * this.mecury;
-      this.venusOld = this.age * this.venus;
-      this.venusExpect = this.lifeExpect * this.venus;
-      this.marsOld = this.age * this.mars;
-      this.marsExpect = this.lifeExpect * this.mars;
-      this.jupiterOld = this.age * this.jupiter;
-      this.jupiterExpect = this.lifeExpect * this.jupiter;
+      this.mercuryOld = Math.round(this.age * this.mecury);
+      this.mercuryExpect = Math.round(this.lifeExpect * this.mecury);
+      this.venusOld = Math.round(this.age * this.venus);
+      this.venusExpect = Math.round(this.lifeExpect * this.venus);
+      this.marsOld = Math.round(this.age * this.mars);
+      this.marsExpect = Math.round(this.lifeExpect * this.mars);
+      this.jupiterOld = Math.round(this.age * this.jupiter);
+      this.jupiterExpect = Math.round(this.lifeExpect * this.jupiter);
   
     }else{
       return false;

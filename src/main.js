@@ -14,7 +14,7 @@ function displayData(newAge){
   $("#mercury-age-display").text(` In Mercury, You would ${newAge.mercuryOld} years old. And you should be expected to live until ${newAge.mercuryExpect} years old.`);
   $("#venus-age-display").text(`In Venus, You would ${newAge.venusOld} years old. And you are expected to live until ${newAge.venusExpect} years old.`);
   $("#mars-age-display").text(`In Mars, you would ${newAge.marsOld} years old, And you are expected to live until ${newAge.marsExpect} years old. You will live ${newAge.marsExpect - newAge.lifeExpect} years longer on Mars.`);
-  $("#jupiter-age-display").text(`In Juputer, you would ${newAge.jupiterOld} years old, And you are expected to live until ${newAge.jupiterExpect} years old. You will live ${newAge.jupiterExpect - newAge.lifeExpect} years longer on Jupiter.`);
+  $("#jupiter-age-display").text(`In Juputer, you would ${newAge.jupiterOld} years old, And you are expected to live until ${Math.round(newAge.jupiterExpect)} years old. You will live ${newAge.jupiterExpect - newAge.lifeExpect} years longer on Jupiter.`);
 
 }
 
