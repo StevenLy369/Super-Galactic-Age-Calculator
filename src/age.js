@@ -5,9 +5,9 @@ export class Age {
     this.venusOld = venusOld,
     this.marsOld = marsOld,
     this.jupiterOld = jupiterOld,
-    this.mecury = .24,
-    this.venus = .62,
-    this.mars = 1.88,
+    this.mecury = .24;
+    this.venus = .62;
+    this.mars = 1.88;
     this.jupiter = 11.86;
   }
 
@@ -43,6 +43,8 @@ export class Age {
   jupiterAge(){
     if(this.age > 0){
       this.jupiterOld = this.age * this.jupiter;
+    }else{
+      return false;
     }
   }
      

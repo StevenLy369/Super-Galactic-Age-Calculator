@@ -40,7 +40,13 @@ describe('Age', () => {
   test('age on mars should be 18.8' , () => {
     year.marsAge();
     expect(year.marsOld).toBeCloseTo(18.8);
-  })
+  });
+
+  test('age on jupiter should be around 118.6' , () => {
+    year.jupiterAge();
+    expect(year.jupiterOld).toBeCloseTo(118.6);
+
+  });
 
 
 
