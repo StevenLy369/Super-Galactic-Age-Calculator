@@ -16,8 +16,6 @@ function displayData(newAge){
   $("#mars-age-display").text(`In Mars, you would ${newAge.marsOld} years old, And you are expected to live until ${newAge.marsExpect} years old. You will live ${newAge.marsExpect - newAge.lifeExpect} years longer on Mars.`);
   $("#jupiter-age-display").text(`In Juputer, you would ${newAge.jupiterOld} years old, And you are expected to live until ${newAge.jupiterExpect} years old. You will live ${newAge.jupiterExpect - newAge.lifeExpect} years longer on Jupiter.`);
 
-
-
 }
 
 
@@ -34,18 +32,7 @@ $(document).ready(function(){
 
     console.log(newAge.age);
     displayData(newAge);
-    
-
-
   });
-
-
-
-
-  
-
-
-
 });
 
 

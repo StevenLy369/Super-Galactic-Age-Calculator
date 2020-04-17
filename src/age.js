@@ -16,8 +16,6 @@ export class Age {
     this.jupiter = 11.86;
   }
 
-
-
   //   mercuryAge(){
   //     if (this.age > 0){
   //       this.mercuryOld = this.age * this.mecury;
