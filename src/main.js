@@ -19,10 +19,8 @@ function displayData(newAge){
 }
 
 
-
 $(document).ready(function(){
   let newAge;
-
 
   $("#age-form").submit(function(event) {
     event.preventDefault();
