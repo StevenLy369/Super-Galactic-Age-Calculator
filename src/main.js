@@ -14,12 +14,12 @@ $(document).ready(function(){
 
   $("#age-form").submit(function(event) {
     event.preventDefault();
-    newAge = new Age($("#input-age").val());
-    newAge.mercuryAge();
+    newAge = new Age($("#input-age").val(), $("#input-expectancy").val());
+    newAge.calculateExpect();
     
 
     console.log(newAge);
-    console.log(newAge.mercuryAge);
+    
 
 
   });
