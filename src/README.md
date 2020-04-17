@@ -44,6 +44,7 @@ Output: age on mercury should be 2.4
     age on jupiter should be around 118.6 You will live 61.599999999999994 years longer on Mars.
     life expectancy on jupiter should be around 830.2 You will live 760.1999999999999 years longer on Jupiter.
 
+* You can view at https://stevenly369.github.io/Super-Galactic-Age-Calculator/
 
 ### License
 
