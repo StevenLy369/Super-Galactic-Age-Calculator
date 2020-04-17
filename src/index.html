@@ -1,53 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
-<div class="container">
-<h1>Super Galactic Age Calculator</h1>
- <form id="age-form">
-  <label for="age">Enter Age:</label>
-  <input type="text" id="input-age">
-  <label for="life-expectancy">Enter Life Expectancy</label>
-  <input type="text" id ="input-expectancy">
+  <div class="container">
+    <h1>Super Galactic Age Calculator</h1>
+    <form id="age-form">
+      <label for="age">Enter Age:</label>
+      <input type="text" id="input-age">
+      <label for="life-expectancy">Enter Life Expectancy</label>
+      <input type="text" id="input-expectancy">
 
-  <button>Submit</button>
-</form>
+      <button>Submit</button>
+    </form>
 
+    <div id="age-display"></div>
+    <div class="row">
 
-<div class="col-sm-6">
-  <div id="age-display"></div>
-  <div id="life-expectancy-display"></div>
+      <div id="mercury" class="col-md-6">
+        <h2>Mercury</h2>
+        <div id="mercury-age-display"></div>
+        <img src="https://solarsystem.nasa.gov/system/feature_items/images/18_mercury_new.png" alt="" srcset="">
+      </div>
 
+      <div id="venus" class="col-md-6">
+        <h2>Venus</h2>
+        <div id="venus-age-display"></div>
+        <img src="https://solarsystem.nasa.gov/system/feature_items/images/27_venus_jg.png" alt="" srcset="">
+      </div>
 
-  <div id="mercury">
-    <h2>Mercury</h2>
-    <div id="mercury-age-display"></div>
-    <img src="https://solarsystem.nasa.gov/system/feature_items/images/18_mercury_new.png" alt="" srcset="">
-    
-    <div id="mercury-age-expectancy"></div>
+      <div id="mars" class="col-md-6">
+        <h2>Mars</h2>
+        <div id="mars-age-display"></div>
+        <img src="https://solarsystem.nasa.gov/system/feature_items/images/19_mars.png" alt="" srcset="">
+      </div>
+
+      <div id="jupiter" class="col-md-6">
+        <h2>Jupiter</h2>
+        <div id="jupiter-age-display"></div>
+        <img src="https://solarsystem.nasa.gov/system/feature_items/images/16_jupiter_new.png" alt="" srcset="">
+
+      </div>
+
+    </div>
   </div>
-  
-  <div id="venus">
-    <h2>Venus</h2>
-    <img src="https://solarsystem.nasa.gov/system/feature_items/images/27_venus_jg.png" alt="" srcset="">
-    <div id="venus-age-display"></div>
-    <div id="venus-age-expectancy"></div>
-  </div>
-  <div id="mars">
-    <h2>Mars</h2>
-    <img src="https://solarsystem.nasa.gov/system/feature_items/images/19_mars.png" alt="" srcset="">
-    <div id="mars-age-display"></div>
-    <div id="mars-age-expectancy"></div>
-  </div>
-
-  <div id="jupiter-age-display"></div>
-  <div id="jupiter-age-expectancy"></div>
- </div>
-</div>
-  
 </body>
+
 </html>
