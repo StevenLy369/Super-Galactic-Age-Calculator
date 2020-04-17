@@ -15,6 +15,7 @@ describe('Age', () => {
   beforeEach(() => {
     year = new Age();
     year.age = 10;
+    year.lifeExpect = 70;
 
   });
 
@@ -29,6 +30,14 @@ describe('Age', () => {
     expect(year.mercuryOld).toEqual(2.4);
 
   });
+
+  test('life expectancy on mercury should be around 16.8',  () => {
+    year.mercuryAge();
+    expect(year.mercuryExpect).toBeCloseTo(16.8);
+
+
+
+  })
 
 
   test('age on venus should be 6.2', () => {
@@ -47,6 +56,8 @@ describe('Age', () => {
     expect(year.jupiterOld).toBeCloseTo(118.6);
 
   });
+
+
 
 
 

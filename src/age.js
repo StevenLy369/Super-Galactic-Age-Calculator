@@ -1,10 +1,12 @@
 export class Age {
-  constructor(age, mercuryOld, venusOld,marsOld,jupiterOld){
+  constructor(age, mercuryOld, venusOld,marsOld,jupiterOld,lifeExpect, mercuryExpect){
     this.age = age,
     this.mercuryOld = mercuryOld,
+    this.mercuryExpect = mercuryExpect,
     this.venusOld = venusOld,
     this.marsOld = marsOld,
     this.jupiterOld = jupiterOld,
+    this.lifeExpect = lifeExpect,
     this.mecury = .24;
     this.venus = .62;
     this.mars = 1.88;
@@ -13,11 +15,11 @@ export class Age {
 
 
 
-
-
   mercuryAge(){
     if (this.age > 0){
       this.mercuryOld = this.age * this.mecury;
+      this.mercuryExpect = this.lifeExpect * this.mecury;
+
     }else{
       return false;
     }
@@ -48,6 +50,11 @@ export class Age {
     }
   }
      
+
+  calculateExpect(){
+
+
+  }
 
 
 
