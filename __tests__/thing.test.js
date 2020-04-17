@@ -28,8 +28,6 @@ describe('Age', () => {
     year.calculateExpect();
     expect(year.mercuryExpect).toBeCloseTo(16.8);
 
-
-
   });
 
   test('age on venus should be 6.2', () => {
@@ -66,10 +64,5 @@ describe('Age', () => {
     expect(year.jupiterExpect).toBeCloseTo(830.2);
   });
 
-
-
-
-
-  
 
 });
