@@ -26,7 +26,7 @@ describe('Age', () => {
 
   test('life expectancy on mercury should be around 16.8',  () => {
     year.calculateExpect();
-    expect(year.mercuryExpect).toBeCloseTo(16.8);
+    expect(year.mercuryExpect).toEqual(16.8);
 
   });
 

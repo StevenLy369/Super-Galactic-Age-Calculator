@@ -16,55 +16,17 @@ export class Age {
     this.jupiter = 11.86;
   }
 
-  //   mercuryAge(){
-  //     if (this.age > 0){
-  //       this.mercuryOld = this.age * this.mecury;
-  //       this.mercuryExpect = this.lifeExpect * this.mecury;
-
-  //     }else{
-  //       return false;
-  //     }
-    
-  //   }
-
-  //   venusAge(){
-  //     if(this.age > 0) {
-  //       this.venusOld = this.age * this.venus;
-  //       this.venusExpect = this.lifeExpect * this.venus;
-  //     }else {
-  //       return false;
-  //     }
-  //   }
-
-  //   marsAge(){
-  //     if(this.age > 0) {
-  //       this.marsOld = this.age * this.mars;
-  //       this.marsExpect = this.lifeExpect * this.mars;
-  //     }else {
-  //       return false;
-  //     }
-  //   }
-
-  //   jupiterAge(){
-  //     if(this.age > 0){
-  //       this.jupiterOld = this.age * this.jupiter;
-  //       this.jupiterExpect = this.lifeExpect * this.jupiter;
-  //     }else{
-  //       return false;
-  //     }
-  //   }
-     
-
+  
   calculateExpect(){
     if (this.age > 0){
-      this.mercuryOld = Math.round(this.age * this.mecury);
-      this.mercuryExpect = Math.round(this.lifeExpect * this.mecury);
-      this.venusOld = Math.round(this.age * this.venus);
-      this.venusExpect = Math.round(this.lifeExpect * this.venus);
-      this.marsOld = Math.round(this.age * this.mars);
-      this.marsExpect = Math.round(this.lifeExpect * this.mars);
-      this.jupiterOld = Math.round(this.age * this.jupiter);
-      this.jupiterExpect = Math.round(this.lifeExpect * this.jupiter);
+      this.mercuryOld = parseFloat((this.age * this.mecury).toFixed(2));
+      this.mercuryExpect = parseFloat((this.lifeExpect * this.mecury).toFixed(2));
+      this.venusOld = parseFloat((this.age * this.venus).toFixed(2));
+      this.venusExpect = parseFloat((this.lifeExpect * this.venus).toFixed(2));
+      this.marsOld = parseFloat((this.age * this.mars).toFixed(2));
+      this.marsExpect = parseFloat((this.lifeExpect * this.mars).toFixed(2));
+      this.jupiterOld = parseFloat((this.age * this.jupiter).toFixed(2));
+      this.jupiterExpect = parseFloat((this.lifeExpect * this.jupiter).toFixed(2));
   
     }else{
       return false;
